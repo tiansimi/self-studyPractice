@@ -31,7 +31,8 @@ def login():
         else:
             flash("登录失败！")
 
-        return render_template("login.html")
+        return render_template("login.html"
+
 
 
 if __name__ == "__main__":
