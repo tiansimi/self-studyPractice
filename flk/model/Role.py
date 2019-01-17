@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # db.session.commit()
     # 插入多条数据
     # users = [Role(name="lisa"), Role(name="米宝"), Role(name="Mommy"), Role(name="Daddy")]
-    #db.session.add_all(users)
+    # db.session.add_all(users)
     #db.session.commit()
     users = Role.query.all()
     #print(users)
