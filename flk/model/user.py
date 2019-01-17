@@ -14,6 +14,5 @@ cursor = conn.cursor()
 sql = "select * from tb_channel_info"
 a = cursor.execute(sql)
 conn.commit()
-for i in cursor:
+for i in cursor:  # 输出查询数据库中的所有渠道数据
     print(i)
-
