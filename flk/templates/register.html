@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post">
+    {{form.csrf_token}}
+    {{form.user_name.label}}
+    <p>{{form.user_name}}</p>
+    {%for msg in form.user_name.errors%}
+    {{msg}}
+    {%endfor%}
+    {{form.password.label}}
+    <p>{{form.password}}</p>
+    {%for msg in form.password.errors%}
+    <p>{{msg}}</p>
+    {%endfor%}
+    <p>{{form.password2.label}}</p>
+    {{form.password2}}
+    {%for msg in form.password2.errors%}
+    <p>{{msg}}</p>
+    {%endfor%}
+    <p>{{form.submit}}</p>
+</form>
+</body>
+</html>
