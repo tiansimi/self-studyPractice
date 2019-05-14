@@ -7,6 +7,7 @@ from wtforms.validators import DataRequired, EqualTo
 app = Flask(__name__)
 
 app.config["SECRET_KEY"] = "66666"
+
 class RegisterForm(FlaskForm):
     '''自定义注册表单模型类'''
     # datarequire保障数据必须填写并且不能为空
