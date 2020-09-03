@@ -1,4 +1,4 @@
-__author__ = 'lenovo'
+__author__ = 'TQ'
 from flask_sqlalchemy import SQLAlchemy
 from flk import flaskapp
 
