@@ -1,4 +1,4 @@
-# 接口自动拉取房间信息后，存入csv中
+# 接口自动拉取房间信息后，存入csv中,用的pytest
 import pytest
 import json
 import requests
