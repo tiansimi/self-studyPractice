@@ -16,6 +16,12 @@ class Doexcel:
             test_data.append(row_data)
         return test_data
 
+    def write_back(self, file_name, sheet_name, i, value):   #写入结果
+        wb = load_workbook(file_name)
+        sheet = wb[sheet_name]
+        sheet.cell(i, 5).value = value
+        wb.save(file_name)
+
 
 if __name__ == "__main__":
     test_data = Doexcel().get_data('url表.xlsx', 'owner_info')
