@@ -1,10 +1,12 @@
 import configparser
 import os
+from interface_automation.tools import project_path
 
 
 class PracticeReadConfig:
     cf = configparser.ConfigParser()
-    cf.read('./case.ini', encoding='utf-8')
+    path = os.path.join(project_path.path, 'conf', 'case.ini')
+    cf.read(path, encoding='utf-8')
     sec = cf.sections()
     print(sec)
     opt = cf.options('DB')
